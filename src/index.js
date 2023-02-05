@@ -37,6 +37,10 @@ app.use("/api", postRoutes);
 app.use("/api", updateRoutes);
 app.use("/api", userRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Hello from server");
+});
+
 app.listen(process.env.PORT || 5000, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });

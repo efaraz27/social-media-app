@@ -1,1 +1,1 @@
-export const api = "https://social-media-backend-efaraz27.herokuapp.com/api";
+export const api = "http://social-media-app-1.efaraz.xyz/api";
