@@ -1,7 +1,7 @@
 import { useEffect, React } from "react";
 import axios from "./helpers/axios";
 import Homepage from "./pages/Homepage";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Router } from "react-router-dom";
 import "./App.css";
 import SignIn from "./pages/Signin";
 import SignUp from "./pages/Signup";
@@ -10,7 +10,6 @@ import { signout, updateUser } from "./redux/auth/authActions";
 import Profile from "./pages/Profile";
 
 function App() {
-
   const auth = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 
@@ -30,7 +29,7 @@ function App() {
     isLoggedIn();
     //eslint-disable-next-line
   }, []);
-  
+
   return (
     <div className="App">
       <Routes>
