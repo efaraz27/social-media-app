@@ -1,6 +1,6 @@
 {
   "name": "social-media-app",
-  "homepage": "https://social-media-app-olive.vercel.app/",
+  "homepage": "https://social-media-app-olive.vercel.app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
