@@ -29,7 +29,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Routes>
+      <Routes basename={process.env.PUBLIC_URL}>
         <Route exact path="/" element={<Homepage />} />
         <Route exact path="/login" element={<SignIn />} />
         <Route exact path="/signup" element={<SignUp />} />
