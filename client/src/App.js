@@ -10,8 +10,10 @@ import { signout, updateUser } from "./redux/auth/authActions";
 import Profile from "./pages/Profile";
 
 function App() {
+
   const auth = useSelector((state) => state.auth);
   const dispatch = useDispatch();
+
   const isLoggedIn = () => {
     axios
       .post(`/isSignedIn`, { token: `${auth.token}` })
@@ -23,10 +25,12 @@ function App() {
         dispatch(signout());
       });
   };
+
   useEffect(() => {
     isLoggedIn();
     //eslint-disable-next-line
   }, []);
+  
   return (
     <div className="App">
       <Routes>
